@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1380</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1380</width>
+    <height>800</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Editor</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(122, 178, 211);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_7">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_Pictures">
+        <item>
+         <widget class="QLabel" name="label_Original">
+          <property name="minimumSize">
+           <size>
+            <width>450</width>
+            <height>450</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_Edit">
+          <property name="minimumSize">
+           <size>
+            <width>450</width>
+            <height>450</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(255, 255, 255);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>450</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>444</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(74, 98, 138);</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="Histogram" name="label_Histogram" native="true">
+             <property name="minimumSize">
+              <size>
+               <width>420</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>420</width>
+               <height>200</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(255, 255, 255);</string>
+             </property>
+             <property name="text" stdset="0">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>37</width>
+               <height>17</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QScrollArea" name="scrollArea">
+             <property name="minimumSize">
+              <size>
+               <width>370</width>
+               <height>500</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>370</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgb(122, 178, 211);</string>
+             </property>
+             <property name="widgetResizable">
+              <bool>true</bool>
+             </property>
+             <widget class="QWidget" name="scrollAreaWidgetContents">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>347</width>
+                <height>1053</height>
+               </rect>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="2" column="0">
+                <widget class="QGroupBox" name="groupBox_Hist">
+                 <property name="minimumSize">
+                  <size>
+                   <width>324</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(185, 229, 232);</string>
+                 </property>
+                 <property name="title">
+                  <string>Hist</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_21">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_Dark">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Dark</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QSpinBox" name="spinBox_Dark">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>50</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="sizeIncrement">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>10</number>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="1" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout_22">
+                    <item>
+                     <widget class="QPushButton" name="pushButton_Bright">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>200</width>
+                        <height>50</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="text">
+                       <string>Bright</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QSpinBox" name="spinBox_Bright">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>50</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="sizeIncrement">
+                       <size>
+                        <width>50</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>10</number>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="pushButton_Linear_correction">
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Linear correction</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="pushButton_Adaptive_Histogram_Equalization">
+                    <property name="minimumSize">
+                     <size>
+                      <width>300</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Adaptive Histogram equalization</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QPushButton" name="pushButton_Histogram_Equalization">
+                    <property name="minimumSize">
+                     <size>
+                      <width>300</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Histogram equalization</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QGroupBox" name="groupBox_Binarization">
+                 <property name="font">
+                  <font>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                   <underline>false</underline>
+                   <strikeout>false</strikeout>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(185, 229, 232);</string>
+                 </property>
+                 <property name="title">
+                  <string>Binarization</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_5">
+                  <item row="3" column="0">
+                   <layout class="QHBoxLayout" name="horizontalLayout">
+                    <item>
+                     <widget class="QSlider" name="horizontalSlider_Threshold">
+                      <property name="enabled">
+                       <bool>false</bool>
+                      </property>
+                      <property name="sizePolicy">
+                       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                        <horstretch>0</horstretch>
+                        <verstretch>0</verstretch>
+                       </sizepolicy>
+                      </property>
+                      <property name="minimumSize">
+                       <size>
+                        <width>210</width>
+                        <height>15</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>210</width>
+                        <height>30</height>
+                       </size>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true"/>
+                      </property>
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>255</number>
+                      </property>
+                      <property name="tracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QSpinBox" name="spinBox_Threshold">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>50</width>
+                        <height>35</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>10</pointsize>
+                       </font>
+                      </property>
+                      <property name="minimum">
+                       <number>1</number>
+                      </property>
+                      <property name="maximum">
+                       <number>255</number>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QPushButton" name="pushButton_Compare_methods">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Compare methods</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_Dithering">
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>MS Shell Dlg 2</family>
+                      <pointsize>10</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>Dithering</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QCheckBox" name="checkBox_Binarization">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Binarization</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QGroupBox" name="groupBox_Binarization_OpenCV">
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>220</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>270</width>
+                      <height>220</height>
+                     </size>
+                    </property>
+                    <property name="title">
+                     <string/>
+                    </property>
+                    <layout class="QGridLayout" name="gridLayout">
+                     <item row="2" column="0">
+                      <widget class="QPushButton" name="pushButton_Adaptive_Binarization_1">
+                       <property name="minimumSize">
+                        <size>
+                         <width>250</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>10</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Adaptive binarization (mean)</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="0" column="0">
+                      <widget class="QCheckBox" name="checkBox_OpenCV">
+                       <property name="minimumSize">
+                        <size>
+                         <width>220</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>220</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>10</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>OpenCV</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="1" column="0">
+                      <widget class="QPushButton" name="pushButton_Otsu_Binarization">
+                       <property name="minimumSize">
+                        <size>
+                         <width>250</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>10</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Otsu's binarization</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item row="3" column="0">
+                      <widget class="QPushButton" name="pushButton_Adaptive_Binarization_2">
+                       <property name="minimumSize">
+                        <size>
+                         <width>250</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="maximumSize">
+                        <size>
+                         <width>250</width>
+                         <height>50</height>
+                        </size>
+                       </property>
+                       <property name="font">
+                        <font>
+                         <pointsize>10</pointsize>
+                        </font>
+                       </property>
+                       <property name="text">
+                        <string>Adaptive binarization (Sauvola method)</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QGroupBox" name="groupBox_Filters">
+                 <property name="minimumSize">
+                  <size>
+                   <width>270</width>
+                   <height>220</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(185, 229, 232);</string>
+                 </property>
+                 <property name="title">
+                  <string>Filters</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="2" column="0">
+                   <widget class="QPushButton" name="pushButton_Adaptive_Median_filter">
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>250</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Adaptive Median filter</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="0">
+                   <widget class="QPushButton" name="pushButton_Median_filter">
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>250</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Median filter</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_Gauss_filter">
+                    <property name="minimumSize">
+                     <size>
+                      <width>270</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>250</width>
+                      <height>50</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>10</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>Gauss filter</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>37</width>
+               <height>17</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1380</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Histogram</class>
+   <extends>QWidget</extends>
+   <header>histogram.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
